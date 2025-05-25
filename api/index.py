@@ -44,6 +44,7 @@ async def get_marks(name: List[str] = Query(None)):
 async def root():
     return {"message": "Student Marks API. Use /api?name=X&name=Y to get marks."}
 
+
 # This allows running the app with Uvicorn directly
 if __name__ == "__main__":
     import uvicorn
